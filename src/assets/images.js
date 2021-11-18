@@ -11,9 +11,9 @@ const imagePlansWeekly = `${pathImages}/image04.jpg`
 const imageHome = `${pathImages}/image05.webp`
 
 export {
-    imageDetailsAvaliation,
-    imagePlansMonthly,
-    imageDetails,
-    imagePlansWeekly,
-    imageHome
+	imageDetailsAvaliation,
+	imagePlansMonthly,
+	imageDetails,
+	imagePlansWeekly,
+	imageHome
 }

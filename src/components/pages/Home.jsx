@@ -8,18 +8,18 @@ import { imageHome } from '../../assets/images'
 
 
 const Home = () => {
-    return (
-        <BackGround bottom={'50%'}>
-            <Title>Bem vindo ao GratiBox</Title>
-            <SubTitle>
-                Receba em casa um box com chás, produtos organicos, incensos e muito mais...
-            </SubTitle>
-            <img src={imageHome} width={'100%'} alt=''/>
-            <SubmitButton>Quero começar</SubmitButton>
-            <NoShapeButton>Já sou grato</NoShapeButton>
-            <FooterFirstPage />
-        </BackGround>
-    )
+	return (
+		<BackGround bottom={'50%'}>
+			<Title>Bem vindo ao GratiBox</Title>
+			<SubTitle>
+				Receba em casa um box com chás, produtos organicos, incensos e muito mais...
+			</SubTitle>
+			<img src={imageHome} width={'100%'} alt='' />
+			<SubmitButton>Quero começar</SubmitButton>
+			<NoShapeButton>Já sou grato</NoShapeButton>
+			<FooterFirstPage />
+		</BackGround>
+	)
 }
 
 export default Home
