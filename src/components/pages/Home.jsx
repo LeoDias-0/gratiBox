@@ -5,7 +5,7 @@ import SubmitButton from '../utils/SubmitButton'
 import NoShapeButton from '../utils/NoShapeButton'
 import FooterFirstPage from '../utils/FooterFirstPage'
 import { imageHome } from '../../assets/images'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 
 
 const Home = () => {
