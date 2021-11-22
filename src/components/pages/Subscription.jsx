@@ -28,6 +28,14 @@ const Subscription = () => {
 		return first.slice(0, 1).toUpperCase() + first.slice(1)
 	}
 
+	const handleSubmit = (type) => {
+		setUser({ ...user, type })
+
+		localStorage.setItem('gratibox', JSON.stringify({ ...user, type }))
+
+		history.push('/sign-plan')
+	}
+
 	return (
 		<BackGround bottom={'-75vh'}>
 			<Title
@@ -51,7 +59,7 @@ const Subscription = () => {
 					Você recebe um box por semana.
 					Ideal para quem quer exercer a gratidão todos os dias.
 				</SubscriptionText>
-				<SubmitButton>Assinar</SubmitButton>
+				<SubmitButton onClick={() => handleSubmit('Semanal')}>Assinar</SubmitButton>
 			</Box>
 
 			<Box
@@ -66,7 +74,7 @@ const Subscription = () => {
 					Você recebe um box por mês.<br /><br />
 					Ideal para quem está começando agora.
 				</SubscriptionText>
-				<SubmitButton>Assinar</SubmitButton>
+				<SubmitButton onClick={() => handleSubmit('Mensal')}>Assinar</SubmitButton>
 			</Box>
 		</BackGround>
 	)

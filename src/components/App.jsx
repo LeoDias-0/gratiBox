@@ -8,6 +8,8 @@ import UserContext from '../contexts/UserContext'
 import { useState } from 'react'
 import { useEffect } from 'react/cjs/react.development'
 import Subscription from './pages/Subscription'
+import SignPlan from './pages/SignPlan'
+import SignPlanSecond from './pages/SignPlanSecond'
 
 const App = () => {
 	const [user, setUser] = useState({})
@@ -37,6 +39,12 @@ const App = () => {
 					</Route>
 					<Route from='/subscription' exact>
 						<Subscription />
+					</Route>
+					<Route from='/sign-plan' exact>
+						<SignPlan />
+					</Route>
+					<Route from='/sign-plan-2' exact>
+						<SignPlanSecond />
 					</Route>
 				</Switch>
 			</BrowserRouter>
