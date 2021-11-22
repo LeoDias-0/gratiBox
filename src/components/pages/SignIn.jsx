@@ -40,8 +40,6 @@ const SignIn = () => {
 
 			const { token, name } = response.data
 
-			console.log({ 'response signin': response.data })
-
 			setUser({ token, name })
 
 			localStorage.setItem('gratibox', JSON.stringify({ ...user, token, name }))

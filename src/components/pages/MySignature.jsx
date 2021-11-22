@@ -30,7 +30,8 @@ const MySignature = () => {
 			setSignature(signature)
 
 		}).catch(res => {
-			console.log(res)
+
+			if (res.response.status === 404) return history.push('/subscription')
 		})
 
 	}, [])

@@ -27,9 +27,16 @@ const getSignature = (token) => {
 	return axios.get(`${BASE_URL}/my-signature`, config)
 }
 
+const postSignature = (body, token) => {
+	const config = makeConfig(token)
+
+	return axios.post(`${BASE_URL}/sign-plan`, body, config)
+}
+
 
 export {
 	postSignIn,
 	postSignUp,
-	getSignature
+	getSignature,
+	postSignature
 }
