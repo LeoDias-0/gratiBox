@@ -9,15 +9,17 @@ const ContainerButton = styled.div`
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: ${props => props.fontSize || '18px'};
 	text-align: center;
 	color: #FFFFFF;
-	display: inline-block
+	display: inline-block;
+	width: ${props => props.width};
+	margin-top: ${props => props.marginTop};
 `
 
-const SubmitButton = ({ children }) => {
+const SubmitButton = ({ children, ...params }) => {
 	return (
-		<ContainerButton>
+		<ContainerButton {...params}>
 			{children}
 		</ContainerButton>
 	)
