@@ -7,7 +7,7 @@ import validateSignInInfo from '../../validations/validateSignInInfo'
 import { useState, useContext } from 'react'
 import Swal from 'sweetalert2'
 import { postSignIn } from '../../services/API'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import UserContext from '../../contexts/UserContext'
 
 

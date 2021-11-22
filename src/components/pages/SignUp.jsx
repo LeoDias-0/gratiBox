@@ -7,7 +7,7 @@ import { useState } from 'react'
 import validateSignUpInfo from '../../validations/validateSignUpInfo'
 import Swal from 'sweetalert2'
 import { postSignUp } from '../../services/API'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 
 const SignUp = () => {
 	const [name, setName] = useState('')
