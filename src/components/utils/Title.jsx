@@ -8,12 +8,15 @@ const ContainerTitle = styled.p`
 	font-size: 28px;
 	text-align: center;
 	color: #FFFFFF;
-	margin: 28px 0;
+	margin-top: ${props => props.marginTop || '28px'};
+	margin-right: ${props => props.marginRight || '0px'};
+	margin-bottom: ${props => props.marginBottom || '28px'};
+	margin-left: ${props => props.marginLeft || '0px'};
 `
 
-const Title = ({ children }) => {
+const Title = ({ children, ...params }) => {
 	return (
-		<ContainerTitle>
+		<ContainerTitle {...params}>
 			{children}
 		</ContainerTitle>
 	)

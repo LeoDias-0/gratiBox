@@ -8,13 +8,16 @@ const ContainerSubTitle = styled.p`
 	font-size: 18px;
 	text-align: center;
 	color: #FFFFFF;
-	margin: 18px 0;
+	margin-top: ${props => props.marginTop || '18px'};
+	margin-right: ${props => props.marginRight || '0px'};
+	margin-bottom: ${props => props.marginBottom || '18px'};
+	margin-left: ${props => props.marginLeft || '0px'};
 	max-width: calc(100vw - 1cm);
 `
 
-const SubTitle = ({ children }) => {
+const SubTitle = ({ children, ...params }) => {
 	return (
-		<ContainerSubTitle>
+		<ContainerSubTitle {...params}>
 			{children}
 		</ContainerSubTitle>
 	)

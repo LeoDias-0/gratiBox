@@ -15,9 +15,9 @@ const ContainerButton = styled.button`
 	padding: 6px 30px 6px 30px;
 `
 
-const NoShapeButton = ({ children }) => {
+const NoShapeButton = ({ children, ...params }) => {
 	return (
-		<ContainerButton>
+		<ContainerButton {...params}>
 			{children}
 		</ContainerButton>
 	)
